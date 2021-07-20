@@ -64,9 +64,8 @@ void main() {
       () async {
         // arrange
         final expectedJsonString = json.encode(tNumberTriviaModel.toJson());
-        when(mockSharedPreferences.setString(
-                cachedNumberTrivia, expectedJsonString))
-            .thenAnswer((_) async => Future.value(true));
+        when(mockSharedPreferences.setString(any, any))
+            .thenAnswer((_) async => true);
         // act
         dataSource.cacheNumberTrivia(tNumberTriviaModel);
         // assert
