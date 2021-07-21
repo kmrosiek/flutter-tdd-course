@@ -14,12 +14,12 @@ import '../../../../fixtures/fixture_reader.dart';
 
 @GenerateMocks([SharedPreferences])
 void main() {
-  late NumberTriviaLocalDataSourceImpl dataSource;
+  late SharedPrefNumberTriviaLocalDataSource dataSource;
   late MockSharedPreferences mockSharedPreferences;
 
   setUp(() {
     mockSharedPreferences = MockSharedPreferences();
-    dataSource = NumberTriviaLocalDataSourceImpl(
+    dataSource = SharedPrefNumberTriviaLocalDataSource(
       sharedPreferences: mockSharedPreferences,
     );
   });
