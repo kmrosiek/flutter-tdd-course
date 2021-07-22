@@ -4,3 +4,8 @@ The goal of this project was to create a Flutter application and practise Test D
 
   
 This project was created with the guidance of [Test Driven Development Course by Matt Resetar](https://www.youtube.com/watch?v=KjE2IDphA_U&list=PLB6lc7nQ1n4iYGE_khpXRdJkJEp9WOech)
+
+## Demo
+<p align="center">
+  <img width="30%" src="images/screen.gif">
+</p>
